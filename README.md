@@ -24,5 +24,4 @@ This project showcases the use of PostgreSQL to design and manage a sales databa
 
 -	Database: PostgreSQL
 -	Language: SQL
--	Tools: psql, pgAdmin
 
