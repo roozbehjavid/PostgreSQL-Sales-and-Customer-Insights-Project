@@ -1,13 +1,2 @@
-# Running total of monthly sales
 
-- QUERY
-
-SELECT 
-    DATE_TRUNC('month', order_date) AS month,
-    SUM(order_total) AS total_sales,
-    SUM(SUM(order_total)) OVER (ORDER BY DATE_TRUNC('month', order_date)) AS running_total
-FROM orders
-GROUP BY DATE_TRUNC('month', order_date);
-
-- DESCRIPTION: This query calculates a running total of monthly sales
 
